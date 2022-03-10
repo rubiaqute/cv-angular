@@ -27,4 +27,15 @@ $themes-theme-dark: mat.define-dark-theme((
   @include angular-material-theme($themes-theme-dark)
 }
 html, body { height: 100%; }
+html {
+  font-size: 10px;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.background-primary{
+  background-color: mat-color($themes-primary);
+}
+.dark-theme-mode{
+  .background-primary{
+    background-color: mat-color($themes-primary-dark);
+  }
+}

@@ -1,0 +1,19 @@
+<mat-drawer-container class="container mat-app-background" [ngClass]="{ 'dark-theme-mode': isDarkTheme }" [hasBackdrop]="true">
+  <mat-drawer class="side-container" #drawer mode="over">
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar color ="primary">
+      <button mat-icon-button (click)="drawer.toggle()">
+       <mat-icon>menu</mat-icon>
+     </button>
+     <span style ="flex: auto;"></span>
+     <span>CV Inga Baranets</span>
+     <span style ="flex: auto;"></span>
+     <mat-slide-toggle [(ngModel)]="isDarkTheme">
+       <mat-icon>bedtime</mat-icon>
+     </mat-slide-toggle>
+   </mat-toolbar>
+   <app-content></app-content>
+  </mat-drawer-content>
+</mat-drawer-container>
