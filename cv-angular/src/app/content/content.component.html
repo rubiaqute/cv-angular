@@ -3,13 +3,13 @@
     <div class="image-wrapper">
       <img src="assets/avatar.jpg" class="mat-elevation-z8" alt="avatar" />
     </div>
-    <mat-card-title class="title">Inga Baranets</mat-card-title>
-    <mat-card-title class="title">Frontend Developer</mat-card-title>
-    <p class="header background-primary mat-elevation-z8">Contacts</p>
+    <mat-card-title class="title">{{'CONTENT.NAME'| translate}}</mat-card-title>
+    <mat-card-title class="title">{{'CONTENT.POSITION'| translate}}</mat-card-title>
+    <p class="header background-primary mat-elevation-z8">{{'CONTENT.CONTACTS'| translate}}</p>
     <mat-list>
       <mat-list-item class="list-item">
         <mat-icon mat-list-icon>travel_explore</mat-icon>
-        Moscow, Russia
+        {{'CONTENT.LOCATION'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item">
         <mat-icon mat-list-icon>phone_iphone</mat-icon>
@@ -21,10 +21,10 @@
       </mat-list-item>
       <mat-list-item class="list-item">
         <mat-icon mat-list-icon>link</mat-icon>
-        <a href="https://github.com/rubiaqute">https://github.com/rubiaqute</a>
+        <a href="https://github.com/rubiaqute" target="_blank" class="link">https://github.com/rubiaqute</a>
       </mat-list-item>
     </mat-list>
-    <p class="header background-primary mat-elevation-z8">Skills</p>
+    <p class="header background-primary mat-elevation-z8">{{'CONTENT.SKILLS'| translate}}</p>
     <mat-chip-list>
       <mat-chip color="pimary" selected>HTML</mat-chip>
       <mat-chip color="pimary" selected>CSS</mat-chip>
@@ -40,82 +40,205 @@
   </div>
   <div class="column column__right">
     <p class="header background-primary mat-elevation-z8 header_right">
-      Summary
+      {{'CONTENT.SUMMARY.TITLE'| translate}}
     </p>
+    <hr class="divider background-accent">
     <mat-list class="list">
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        Full of enthusiasm and passion Frontend Developer beginner;
+        {{'CONTENT.SUMMARY.POINT1'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        Excellent communication skills including positive experience in
-        networking with clients, international suppliers, colleagues and
-        government authorities;
+        {{'CONTENT.SUMMARY.POINT2'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        High level of responsibility and self-organization, wide experience in
-        distant working with hard deadlines
+        {{'CONTENT.SUMMARY.POINT3'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        Feeling comfortable in constantly changing circumstances and
-        challengeable situations;
+        {{'CONTENT.SUMMARY.POINT4'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        Quick learner and good listener
+        {{'CONTENT.SUMMARY.POINT5'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        Dream of working in programming
+        {{'CONTENT.SUMMARY.POINT6'| translate}}
       </mat-list-item>
     </mat-list>
     <p class="header background-primary mat-elevation-z8 header_right">
-      Languages
+      {{'CONTENT.LANGUAGES.TITLE'| translate}}
     </p>
+    <hr class="divider background-accent">
     <div class="language-item">
-      <p class="language-item__description">English - C1</p>
+      <p class="language-item__description">{{'CONTENT.LANGUAGES.EN'| translate}} - C1</p>
       <div class="language-item__image">
-        <a href="https://www.efset.org/cert/djh7w8" target="_blank">
+        <a href="https://www.efset.org/cert/djh7w8" target="_blank" class="link">
           <img src="assets/english_level.png" alt="english-level" />
         </a>
       </div>
     </div>
     <div class="language-item">
-      <p class="language-item__description">Spanish - B1</p>
+      <p class="language-item__description">{{'CONTENT.LANGUAGES.ES'| translate}} - B1</p>
       <div class="language-item__image">
         <img src="assets/spanish_level.png" alt="spanish-level" />
       </div>
     </div>
     <p class="header background-primary mat-elevation-z8 header_right">
-      Education
+      {{'CONTENT.EDUCATION.TITLE'| translate}}
     </p>
+    <hr class="divider background-accent">
     <mat-list class="list">
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        2006-2011 Russian Customs Academy (graduated with distinction)
-        Faculty: World Economy
-        Specialty: Foreign Trade
+        {{'CONTENT.EDUCATION.ACADEMY'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        September, 2021 - March, 2022 Roller Scopes School “JavaScript/Front-end” (finished in top-10 total score)
+        {{'CONTENT.EDUCATION.RS'| translate}}
       </mat-list-item>
       <mat-list-item class="list-item list-item_wide">
         <mat-icon mat-list-icon>check_circle_outline</mat-icon>
-        January, 2022 V. Minin, “Angular, Theory and Practice”
+        {{'CONTENT.EDUCATION.MININ'| translate}}
       </mat-list-item>
     </mat-list>
     <p class="header background-primary mat-elevation-z8 header_right">
-      Code Example
+      {{'CONTENT.CODE.TITLE'| translate}}
     </p>
-
-    <pre><code [highlight]="'function flip(fn) {
-      return (...args) =>
-        fn.apply(this, args.reverse())
-   }'">
+    <hr class="divider background-accent">
+    <mat-list class="list">
+      <mat-list-item class="list-item">
+        <mat-icon mat-list-icon>check_circle_outline</mat-icon>
+        Codewars:&nbsp;<a href="https://www.codewars.com/users/rubiaqute" target="_blank" class="link"> rubiaqute</a>
+      </mat-list-item>
+      <mat-list-item class="list-item">
+        <mat-icon mat-list-icon>check_circle_outline</mat-icon>
+        {{'CONTENT.CODE.RANK'| translate}}: 4ky
+      </mat-list-item>
+      <mat-list-item class="list-item">
+        <mat-icon mat-list-icon>check_circle_outline</mat-icon>
+        {{'CONTENT.CODE.KATA'| translate}}: 90
+      </mat-list-item>
+    </mat-list>
+    <pre><code class="language-typescript" [innerHTML]="code">
     </code></pre>
+    <hr class="divider background-accent">
+    <p class="header background-primary mat-elevation-z8 header_right">
+      {{'CONTENT.PROJECTS.TITLE'| translate}}
+    </p>
+    <a href="https://rubiaqute.github.io/rsschool-mirror/art-quiz/art-quiz/" target="_blank" class="project-card__link">
+      <mat-card class="project-card">
+      <mat-card-header class="project-card__title">
+        <mat-card-title >Art-Quiz</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="project-card__content">
+        <div class="project-card__right">
+        <img mat-card-image src="assets/projects/art-quiz.png" alt="project-screenshot">
+      </div>
+        <div class="project-card__left">
+        <mat-card-subtitle>{{'CONTENT.PROJECTS.TECHNOLOGIES'| translate}}</mat-card-subtitle>
+        <p>
+          Javascript, HTML, Sass, Webpack
+        </p>
+        <mat-card-subtitle>{{'CONTENT.PROJECTS.DESCRIPTION'| translate}}</mat-card-subtitle>
+        <p>
+          {{'CONTENT.PROJECTS.ART'| translate}}
+        </p>
+      </div>
+      </mat-card-content>
+    </mat-card>
+  </a>
+  <a href="https://rubiaqute.github.io/rsschool-mirror/museum-dom/" target="_blank" class="project-card__link">
+    <mat-card class="project-card">
+    <mat-card-header class="project-card__title">
+      <mat-card-title >Museum</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="project-card__content">
+      <div class="project-card__right">
+      <img mat-card-image src="assets/projects/museum.png" alt="project-screenshot">
+    </div>
+      <div class="project-card__left">
+      <mat-card-subtitle>{{'CONTENT.PROJECTS.TECHNOLOGIES'| translate}}</mat-card-subtitle>
+      <p>
+        Javascript, HTML, CSS
+      </p>
+      <mat-card-subtitle>{{'CONTENT.PROJECTS.DESCRIPTION'| translate}}</mat-card-subtitle>
+      <p>
+        {{'CONTENT.PROJECTS.MUSEUM'| translate}}
+      </p>
+    </div>
+    </mat-card-content>
+  </mat-card>
+</a>
+<a href="https://rubiaqute-momentum.netlify.app/" target="_blank" class="project-card__link">
+  <mat-card class="project-card">
+  <mat-card-header class="project-card__title">
+    <mat-card-title >Momentum</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="project-card__content">
+    <div class="project-card__right">
+    <img mat-card-image src="assets/projects/momentum.png" alt="project-screenshot">
+  </div>
+    <div class="project-card__left">
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.TECHNOLOGIES'| translate}}</mat-card-subtitle>
+    <p>
+      Javascript, HTML, CSS, Webpack
+    </p>
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.DESCRIPTION'| translate}}</mat-card-subtitle>
+    <p>
+      {{'CONTENT.PROJECTS.MOMENTUM'| translate}}
+    </p>
+  </div>
+  </mat-card-content>
+</mat-card>
+</a>
+<a href="https://rubiaqute.github.io/rsschool-mirror/christmas2/#/" target="_blank" class="project-card__link">
+  <mat-card class="project-card">
+  <mat-card-header class="project-card__title">
+    <mat-card-title >Christmas</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="project-card__content">
+    <div class="project-card__right">
+    <img mat-card-image src="assets/projects/christmas.png" alt="project-screenshot">
+  </div>
+    <div class="project-card__left">
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.TECHNOLOGIES'| translate}}</mat-card-subtitle>
+    <p>
+      Angular (+routing, animation), HTML, Sass. Extra: angular-slider/ngx-slider, html2canvas
+    </p>
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.DESCRIPTION'| translate}}</mat-card-subtitle>
+    <p>
+      {{'CONTENT.PROJECTS.CHRISTMAS'| translate}}
+    </p>
+  </div>
+  </mat-card-content>
+</mat-card>
+</a>
+<a href="https://rslang-aleshkinpaul.netlify.app/#/" target="_blank" class="project-card__link">
+  <mat-card class="project-card">
+  <mat-card-header class="project-card__title">
+    <mat-card-title >RSLang</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="project-card__content">
+    <div class="project-card__right">
+    <img mat-card-image src="assets/projects/rslang.png" alt="project-screenshot">
+  </div>
+    <div class="project-card__left">
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.TECHNOLOGIES'| translate}}</mat-card-subtitle>
+    <p>
+      Angular (+routing, animation, HttpClient), Angular Material, HTML, Sass. Extra: ngx-echarts, lord icons
+    </p>
+    <mat-card-subtitle>{{'CONTENT.PROJECTS.DESCRIPTION'| translate}}</mat-card-subtitle>
+    <p>
+      {{'CONTENT.PROJECTS.RSLANG'| translate}}
+    </p>
+  </div>
+  </mat-card-content>
+</mat-card>
+</a>
   </div>
 </mat-card>
+

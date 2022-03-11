@@ -34,8 +34,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .background-primary{
   background-color: mat-color($themes-primary);
 }
+.background-accent{
+  background-color: mat-color($themes-accent);
+}
 .dark-theme-mode{
   .background-primary{
     background-color: mat-color($themes-primary-dark);
+  }
+  .background-accent{
+    background-color: mat-color($themes-accent-dark);
   }
 }

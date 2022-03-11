@@ -1,0 +1,49 @@
+{
+  "MENU":{
+    "TITLE": "CV Inga Baranets"
+  },
+  "CONTENT":{
+    "NAME": "Inga Baranets",
+    "POSITION":"Frontend Developer",
+    "CONTACTS": "Contacts",
+    "LOCATION": "Moscow, Russia",
+    "SKILLS": "Skills",
+    "SUMMARY":{
+      "TITLE":"Summary",
+      "POINT1": "Full of enthusiasm and passion Frontend Developer beginner;",
+      "POINT2": "Excellent communication skills including positive experience in networking with clients, international suppliers, colleagues and government authorities;",
+      "POINT3": "High level of responsibility and self-organization, wide experience in distant working with hard deadlines",
+      "POINT4": "Feeling comfortable in constantly changing circumstances and challengeable situations;",
+      "POINT5": "Quick learner and good listener",
+      "POINT6": "Dream of working in programming"
+    },
+    "LANGUAGES":{
+      "TITLE":"Languages",
+      "EN": "English",
+      "ES": "Spanish"
+    },
+    "EDUCATION":{
+      "TITLE":"Education",
+      "ACADEMY":"2006-2011 Russian Customs Academy (graduated with distinction) Faculty: World Economy Specialty: Foreign Trade",
+      "RS":"September, 2021 - March, 2022 Roller Scopes School “JavaScript/Front-end” (finished in top-10 total score)",
+      "MININ":"January, 2022 V. Minin, “Angular, Theory and Practice”"
+    },
+    "CODE":{
+      "TITLE":"Code example",
+      "RANK":"Rank",
+      "KATA":"Total completed kata"
+    },
+    "PROJECTS":{
+      "TITLE":"Projects",
+      "TECHNOLOGIES":"Technologies",
+      "DESCRIPTION":"Description",
+      "ART":"Art-quiz game with 2 modes (artists and paintings) with 12 categories in each mode. 2 languages to choose (Russian and English). Also sounds and background music are included. Results are saved in local storage. Adapted for mobile devices.",
+      "MUSEUM": "Landing-page with interactive elements and animation (image slider, video slider, custom video player, booking form with validation, gallery animation, interactive map)",
+      "MOMENTUM": "Dashboard with weather, quotes, COVID-19, time, audio player. Background images, weather, quotes and COVID-19 info are mocked with fetch method. 3 languages to choose (Russian, Spanish and English)",
+      "CHRISTMAS": "SPA for handling christmas toys collection: filtering with multiply conditions, sorting, searching and etc. Also in application you can decorate christmas tree with choosen toys (using drag&drop), garland, snow animation, etc. Finally you can create your own christmas card and download it",
+      "RSLANG": "Command project (3 members). SPA for learning English through mini-games. Implements authorization and statistics for progress showing. Data is obtained from server using HTTPClent methods. Adapted for mobile devices"
+    }
+
+
+  }
+}

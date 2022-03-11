@@ -8,11 +8,16 @@
        <mat-icon>menu</mat-icon>
      </button>
      <span style ="flex: auto;"></span>
-     <span>CV Inga Baranets</span>
+     <span>{{'MENU.TITLE' | translate}}</span>
      <span style ="flex: auto;"></span>
+     <div class="toggles">
+     <mat-slide-toggle (change)="changeLanguage()">
+      <mat-icon>language</mat-icon>
+    </mat-slide-toggle>
      <mat-slide-toggle [(ngModel)]="isDarkTheme">
        <mat-icon>bedtime</mat-icon>
      </mat-slide-toggle>
+    </div>
    </mat-toolbar>
    <app-content></app-content>
   </mat-drawer-content>
