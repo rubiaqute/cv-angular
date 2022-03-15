@@ -1,0 +1,53 @@
+@use '@angular/material' as mat;
+@import '~@angular/material/theming';
+@include mat.core();
+$themes-primary: mat.define-palette(mat.$cyan-palette, 500, A200, 700);
+$themes-accent: mat.define-palette(mat.$pink-palette, 700, A200, 900);
+$themes-warn: mat.define-palette(mat.$red-palette);
+$themes-theme: mat.define-light-theme((
+  color: (
+    primary: $themes-primary,
+    accent: $themes-accent,
+    warn: $themes-warn,
+  )
+));
+@include angular-material-theme($themes-theme);
+$themes-primary-dark: mat.define-palette(mat.$red-palette, 900, 700);
+$themes-accent-dark: mat.define-palette(mat.$blue-gray-palette, 600, 100, 900);
+
+$themes-warn-dark: mat.define-palette(mat.$red-palette);
+$themes-theme-dark: mat.define-dark-theme((
+  color: (
+    primary: $themes-primary-dark,
+    accent: $themes-accent-dark,
+    warn: $themes-warn-dark,
+  )
+));
+.dark-theme-mode{
+  @include angular-material-theme($themes-theme-dark)
+}
+html, body { height: 100%; }
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.background-primary{
+  background-color: mat-color($themes-primary);
+}
+.background-accent{
+  background-color: mat-color($themes-accent);
+}
+.dark-theme-mode{
+  .background-primary{
+    background-color: mat-color($themes-primary-dark);
+  }
+  .background-accent{
+    background-color: mat-color($themes-accent-dark);
+  }
+}
