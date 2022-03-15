@@ -30,6 +30,12 @@ html, body { height: 100%; }
 html {
   font-size: 10px;
 }
+
+@media (max-width: 800px) {
+  html {
+    font-size: 7.5px;
+  }
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .background-primary{
   background-color: mat-color($themes-primary);

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import {MediaMatcher} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,12 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   isDarkTheme=false;
   langValue = false;
-  constructor(public translate:TranslateService){
+  mobileQuery: MediaQueryList;
+  private _mobileQueryListener: () => void;
+  constructor(public translate:TranslateService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher){
+    this.mobileQuery = media.matchMedia('(max-width: 500px)');
+    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
   }
   changeLanguage(){
     this.langValue=!this.langValue

@@ -1,11 +1,11 @@
 <mat-card class="wrapper">
-  <div class="column column__left">
+  <div class="column column__left mat-elevation-z6">
     <div class="image-wrapper">
       <img src="assets/avatar.jpg" class="mat-elevation-z8" alt="avatar" />
     </div>
     <mat-card-title class="title">{{'CONTENT.NAME'| translate}}</mat-card-title>
     <mat-card-title class="title">{{'CONTENT.POSITION'| translate}}</mat-card-title>
-    <p class="header background-primary mat-elevation-z8">{{'CONTENT.CONTACTS'| translate}}</p>
+    <p  id ="contacts" class="header background-primary mat-elevation-z8">{{'CONTENT.CONTACTS'| translate}}</p>
     <mat-list>
       <mat-list-item class="list-item">
         <mat-icon mat-list-icon>travel_explore</mat-icon>
@@ -21,10 +21,10 @@
       </mat-list-item>
       <mat-list-item class="list-item">
         <mat-icon mat-list-icon>link</mat-icon>
-        <a href="https://github.com/rubiaqute" target="_blank" class="link">https://github.com/rubiaqute</a>
+        <a href="https://github.com/rubiaqute" target="_blank" class="link">github.com/rubiaqute</a>
       </mat-list-item>
     </mat-list>
-    <p class="header background-primary mat-elevation-z8">{{'CONTENT.SKILLS'| translate}}</p>
+    <p   id ="skills" class="header background-primary mat-elevation-z8">{{'CONTENT.SKILLS'| translate}}</p>
     <mat-chip-list>
       <mat-chip color="pimary" selected>HTML</mat-chip>
       <mat-chip color="pimary" selected>CSS</mat-chip>
@@ -38,8 +38,8 @@
       <mat-chip>VS Code</mat-chip>
     </mat-chip-list>
   </div>
-  <div class="column column__right">
-    <p class="header background-primary mat-elevation-z8 header_right">
+  <div class="column column__right mat-elevation-z6">
+    <p id ="summary" class="header background-primary mat-elevation-z8 header_right">
       {{'CONTENT.SUMMARY.TITLE'| translate}}
     </p>
     <hr class="divider background-accent">
@@ -69,7 +69,7 @@
         {{'CONTENT.SUMMARY.POINT6'| translate}}
       </mat-list-item>
     </mat-list>
-    <p class="header background-primary mat-elevation-z8 header_right">
+    <p id ="languages" class="header background-primary mat-elevation-z8 header_right">
       {{'CONTENT.LANGUAGES.TITLE'| translate}}
     </p>
     <hr class="divider background-accent">
@@ -87,7 +87,7 @@
         <img src="assets/spanish_level.png" alt="spanish-level" />
       </div>
     </div>
-    <p class="header background-primary mat-elevation-z8 header_right">
+    <p  id ="education" class="header background-primary mat-elevation-z8 header_right">
       {{'CONTENT.EDUCATION.TITLE'| translate}}
     </p>
     <hr class="divider background-accent">
@@ -105,7 +105,7 @@
         {{'CONTENT.EDUCATION.MININ'| translate}}
       </mat-list-item>
     </mat-list>
-    <p class="header background-primary mat-elevation-z8 header_right">
+    <p id ="code" class="header background-primary mat-elevation-z8 header_right">
       {{'CONTENT.CODE.TITLE'| translate}}
     </p>
     <hr class="divider background-accent">
@@ -126,7 +126,7 @@
     <pre><code class="language-typescript" [innerHTML]="code">
     </code></pre>
     <hr class="divider background-accent">
-    <p class="header background-primary mat-elevation-z8 header_right">
+    <p id ="projects" class="header background-primary mat-elevation-z8 header_right">
       {{'CONTENT.PROJECTS.TITLE'| translate}}
     </p>
     <a href="https://rubiaqute.github.io/rsschool-mirror/art-quiz/art-quiz/" target="_blank" class="project-card__link">

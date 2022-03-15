@@ -41,7 +41,7 @@
       "MUSEUM": "Landing-page with interactive elements and animation (image slider, video slider, custom video player, booking form with validation, gallery animation, interactive map)",
       "MOMENTUM": "Dashboard with weather, quotes, COVID-19, time, audio player. Background images, weather, quotes and COVID-19 info are mocked with fetch method. 3 languages to choose (Russian, Spanish and English)",
       "CHRISTMAS": "SPA for handling christmas toys collection: filtering with multiply conditions, sorting, searching and etc. Also in application you can decorate christmas tree with choosen toys (using drag&drop), garland, snow animation, etc. Finally you can create your own christmas card and download it",
-      "RSLANG": "Command project (3 members). SPA for learning English through mini-games. Implements authorization and statistics for progress showing. Data is obtained from server using HTTPClent methods. Adapted for mobile devices"
+      "RSLANG": "Command project (3 members). SPA for learning English through mini-games. Implements authorization and statistics for progress showing. Data is obtained from server using HTTPClient methods. Adapted for mobile devices"
     }
 
 
